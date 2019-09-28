@@ -17,7 +17,7 @@ class StudentsController < ApplicationController
   end
 
   def show
-    @student = Student.search(params[:id])
+    @student = Student.find(params[:id])
   end
 
   def index
